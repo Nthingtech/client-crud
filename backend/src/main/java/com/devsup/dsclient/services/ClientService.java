@@ -1,6 +1,7 @@
 package com.devsup.dsclient.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,13 @@ public class ClientService {
 		
 		return list.stream().map(x -> new ClientDTO(x)).collect(Collectors.toList());
 				
+	}
+
+	@Transactional(readOnly = true)
+	public ClientDTO findById(Long id) {
+		Optional<Client> obj = repository.findById(id);
+		Client entity = obj.get();
+		return new ClientDTO(entity);
 	}
 
 }
