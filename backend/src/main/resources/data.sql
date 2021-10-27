@@ -1,4 +1,4 @@
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Fernando Mendes Rocha', '456.568.333-10', 2000.9, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 1)
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Kate Burton', '678.543.123-00', 3000.96, TIMESTAMP WITH TIME ZONE '1983-09-01T21:30:07.12345Z', 2)
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Alan Walker Pereira', '123.456.789-11', 1000.15, TIMESTAMP WITH TIME ZONE '1999-07-05T20:50:07.12345Z', 0)
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Alan Walker Pereira', '123.456.789-11', 1000.15, TIMESTAMP WITH TIME ZONE '1995-03-06T19:50:03.12345Z', 3)
+INSERT INTO tb_client (name, cpf, income, birth_Date, children, created_At) VALUES ('Fernando Mendes Rocha', '456.568.333-10', 2000.9, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 1, NOW())
+INSERT INTO tb_client (name, cpf, income, birth_Date, children, created_At) VALUES ('Kate Burton', '678.543.123-00', 3000.96, TIMESTAMP WITH TIME ZONE '1983-09-01T21:30:07.12345Z', 2, NOW())
+INSERT INTO tb_client (name, cpf, income, birth_Date, children, created_At) VALUES ('Alan Walker Pereira', '123.456.789-11', 1000.15, TIMESTAMP WITH TIME ZONE '1999-07-05T20:50:07.12345Z', 0, NOW())
+INSERT INTO tb_client (name, cpf, income, birth_Date, children, created_At) VALUES ('Alan Walker Pereira', '123.456.789-11', 1000.15, TIMESTAMP WITH TIME ZONE '1995-03-06T19:50:03.12345Z', 3, NOW())
